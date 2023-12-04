@@ -1,0 +1,272 @@
+html{min-height: 100%;}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 300px;
+}
+#app{
+    height: 100%;
+}
+.navC{
+    z-index: 4;
+    height: 50px;
+    background: white;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 0 0 5px 1px gainsboro;
+    position: sticky;
+    top: 0;
+}
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navLeft{
+    display: flex;
+    cursor: pointer;
+}
+.navLeft img{
+    pointer-events: none;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px 0 10px;
+    border-radius: 20px;
+    pointer-events: none;
+}
+.navLeft div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: math;
+    font-weight: bold;
+    font-size: 17px;
+    color: #d106ff;
+    margin: 0 5px;
+    user-select: none;
+    letter-spacing: 0.6px;
+    pointer-events: none;
+}
+.last{
+    font-size: 13px;
+    text-align: justify;
+}
+main{
+    /* min-height: calc(100% - 51px) */
+}
+footer{
+    height: 50px;
+}
+
+.home{
+    margin: auto;
+    max-width: 1080px;
+    padding-bottom: 20px;
+}
+.home header{
+    padding: 10px;
+}
+.home header figure{
+    margin: 20px 0;
+}
+.home header figcaption{
+    margin-top: 10px;
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 15px;
+    font-family: math;
+    letter-spacing: .2px;
+}
+.home header picture{
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    max-height: 480px;
+    background: #dcdcdc;
+    aspect-ratio: 3/2;
+}
+.home header img{
+    width: 100%;
+    height: 100%;
+}
+.home header h1{
+    margin: 15px 0;
+    text-align: center;
+}
+.home p{
+    font-size: 22px;
+    font-family: math;
+    text-align: center;
+    margin: 10px;
+}
+.home header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.home div a{
+    margin: 10px;
+}
+.linkBtn{
+    background: rgb(201, 2, 201);
+    padding: 7px 10px;
+    color: white;
+    text-decoration: none;
+    font-family: math;
+    letter-spacing: 0.8px;
+    border-radius: 8px;
+}
+.linkBtn:hover{
+    background: rgb(255, 20, 255);
+}
+
+.toolsBox{
+    margin: auto;
+    max-width: 1080px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+.tool{
+    position: relative;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: -1px 1px 2px 2px #dcdcdc;
+    height: auto;
+}
+.tool div{
+    background: #dcdcdc;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+.tool img{
+    position: absolute;
+    width:100%;height:100%;object-fit:cover
+}
+.tool-title, .tool-desc{
+    font-family: source-serif-pro,Georgia,Cambria,Times New Roman,Times,serif;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+}
+.tool-title{
+    margin: 3px 0;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-line-clamp: 3;
+}
+.tool-desc{
+    font-size: 16px;
+    margin: 2px 0;
+    letter-spacing: .4px;
+    -webkit-line-clamp: 4;
+}
+
+.wordsCounter{
+    padding: 1px;
+    margin: auto;
+    max-width: 1080px;
+    /* background: wheat; */
+    min-height: 80vh;
+}
+.wordsCounter header{
+    background: rgb(240, 240, 240);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1px;
+}
+.wordsCounter header h1{
+    margin: 0;
+    margin: 10px;
+}
+.wordsCounter header p{
+    margin: 5px 10px;
+    font-size: 22px;
+    font-family: math;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.wordsCounter textarea,.wordsCounter input{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 300px;
+    resize: vertical;
+    font-size: 20px;
+    color: rgb(94, 94, 94);
+    font-family: math;
+    border-radius: 10px;
+    line-height: 25px;
+    padding: 10px;
+    border: 2px solid gray;
+    /* margin: 0 10px; */
+}
+.inputBox{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: math;
+    padding: 10px 5px;
+}
+.runBtn{
+    margin: 20px;
+    padding: 8px 10px;
+    background: dodgerblue;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.runBtn:hover{
+    background: rgb(1, 128, 255);
+}
+.results{
+    box-sizing: border-box;
+    min-height: 200px;
+    background: white;
+    font-size: 20px;
+    color: rgb(94, 94, 94);
+    font-family: math;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.wordsCounter option{
+    font-size: 16px;padding: 5px;
+}
+.toast {
+    position: fixed;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-family: sans-serif;
+}
+@media (max-width: 480px) {
+.toolsBox {
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+  }
+  @media (min-width: 481px) and (max-width: 720px) {
+    .toolsBox {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
